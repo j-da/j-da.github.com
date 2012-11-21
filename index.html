@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+	<head>
+		<title>JDa's Portfolio :: Good day!</title>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:600,300' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+			body {
+				background: #fff;
+				font: 600 20px 'Open Sans';
+				color: #666;
+			}
+			div {
+				display: block;
+			}
+			img {
+				vertical-align: middle;
+			}
+			h1 {
+				font: 300 48pt/160px 'Open Sans';
+			}
+			h1 h1:not(.header) {
+				color: #09f;
+			}
+			.clearfix {
+				clear: both;
+			}
+			.background {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 400px;
+				z-index: -9999;
+				background: url('portfolio_01.png') no-repeat top right;
+				background-color: #09f;
+				animation: bcolor 60s linear infinite;
+				-webkit-animation: bcolor 60s linear infinite;
+				-moz-animation: bcolor 60s linear infinite;
+				-ms-animation: bcolor 60s linear infinite;
+				-o-animation: bcolor 60s linear infinite;
+			}
+			.container, .contact {
+				width: 100%;
+				max-width: 800px;
+				margin: 0px auto;
+			}
+			.container img {
+				float: right;
+			}
+			.contact {
+				padding: 40px 0 80px 0;
+				text-align: right;
+			}
+			.cbtn {
+				display: inline-block;
+				width: 220px;
+				height: 40px;
+				margin-bottom: -14px;
+				background: url('button_01.png') no-repeat center center;
+				transition: background-image .25s;
+				-webkit-transition: background-image .25s;
+				-moz-transition: background-image .25s;
+				-ms-transition: background-image .25s;
+				-o-transition: background-image .25s;
+			}
+			.cbtn:hover {
+				background: url('button_02.png') no-repeat center center;
+			}
+			.pad {
+				margin: 20px;
+			}
+			.header {
+				width: 100%;
+				height: 200px;
+				line-height: 200px;
+				max-width: 800px;
+				margin: 0 auto;
+				padding-left: 20px;
+				opacity: 1;
+				color: #09f;
+				animation: rcolor 60s linear infinite;
+				transition: opacity .5s;
+				-webkit-animation: rcolor 60s linear infinite;
+				-webkit-transition: opacity .5s;
+				-moz-animation: rcolor 60s linear infinite;
+				-moz-transition: opacity .5s;
+				-ms-animation: rcolor 60s linear infinite;
+				-ms-transition: opacity .5s;
+				-o-animation: rcolor 60s linear infinite;
+				-o-transition: opacity .5s;
+			}
+
+			@keyframes bcolor {
+				0%  { background-color: #09f; }
+				17% { background-color: #60f; }
+				33% { background-color: #f09; }
+				50% { background-color: #f60; }
+				67% { background-color: #6c0; }
+				83% { background-color: #06f; }
+			}
+			@keyframes rcolor {
+				0%  { color: #09f; }
+				17% { color: #60f; }
+				33% { color: #f09; }
+				50% { color: #f60; }
+				67% { color: #6c0; }
+				83% { color: #06f; }
+			}
+			@-webkit-keyframes bcolor {
+				0%  { background-color: #09f; }
+				17% { background-color: #60f; }
+				33% { background-color: #f09; }
+				50% { background-color: #f60; }
+				67% { background-color: #6c0; }
+				83% { background-color: #06f; }
+			}
+			@-webkit-keyframes rcolor {
+				0%  { color: #09f; }
+				17% { color: #60f; }
+				33% { color: #f09; }
+				50% { color: #f60; }
+				67% { color: #6c0; }
+				83% { color: #06f; }
+			}
+			@-moz-keyframes bcolor {
+				0%  { background-color: #09f; }
+				17% { background-color: #60f; }
+				33% { background-color: #f09; }
+				50% { background-color: #f60; }
+				67% { background-color: #6c0; }
+				83% { background-color: #06f; }
+			}
+			@-moz-keyframes rcolor {
+				0%  { color: #09f; }
+				17% { color: #60f; }
+				33% { color: #f09; }
+				50% { color: #f60; }
+				67% { color: #6c0; }
+				83% { color: #06f; }
+			}
+			@-ms-keyframes bcolor {
+				0%  { background-color: #09f; }
+				17% { background-color: #60f; }
+				33% { background-color: #f09; }
+				50% { background-color: #f60; }
+				67% { background-color: #6c0; }
+				83% { background-color: #06f; }
+			}
+			@-ms-keyframes rcolor {
+				0%  { color: #09f; }
+				17% { color: #60f; }
+				33% { color: #f09; }
+				50% { color: #f60; }
+				67% { color: #6c0; }
+				83% { color: #06f; }
+			}
+			@-o-keyframes bcolor {
+				0%  { background-color: #09f; }
+				17% { background-color: #60f; }
+				33% { background-color: #f09; }
+				50% { background-color: #f60; }
+				67% { background-color: #6c0; }
+				83% { background-color: #06f; }
+			}
+			@-o-keyframes rcolor {
+				0%  { color: #09f; }
+				17% { color: #60f; }
+				33% { color: #f09; }
+				50% { color: #f60; }
+				67% { color: #6c0; }
+				83% { color: #06f; }
+			}
+
+			@media (min-width: 801px) {
+				.background {
+					background: url('portfolio_01L.png') no-repeat top center;
+					background-color: #09f;
+					animation: bcolor 60s linear infinite;
+					-webkit-animation: bcolor 60s linear infinite;
+					-moz-animation: bcolor 60s linear infinite;
+					-ms-animation: bcolor 60s linear infinite;
+					-o-animation: bcolor 60s linear infinite;
+				}
+			}
+
+			@media (max-width: 600px) {
+				.header {
+					opacity: 0;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<h1>Good <span id="ts">day</span>!</h1>
+		</div>
+		<div class="container">
+			<img src="portfolio_03.png" alt=""/>
+			<img src="portfolio_04.png" alt=""/>
+			<img src="portfolio_05.png" alt=""/>
+			<img src="portfolio_06.png" alt=""/>
+			<img src="portfolio_07.png" alt=""/>
+			<img src="portfolio_08.png" alt=""/>
+			<img src="portfolio_09.png" alt=""/>
+			<img src="portfolio_10.png" alt=""/>
+			<img src="portfolio_11.png" alt=""/>
+			<img src="portfolio_12.png" alt=""/>
+			<img src="portfolio_13.png" alt=""/>
+			<img src="portfolio_14.png" alt=""/>
+		</div>
+		<div class="clearfix"></div>
+		<div class="contact">
+			<div class="pad">
+				Like what you see? &nbsp;&nbsp;&nbsp;<a href="mailto:hello@contact-j-da.co.cc" class="cbtn"></a>
+			</div>
+		</div>
+		<div class="background"></div>
+		<script type="text/javascript">
+			// http://dustindiaz.com/smallest-domready-ever
+			function ready(cb) {
+				/in/.test(document.readyState)
+					? setTimeout('ready('+cb+')', 9)
+					: cb();
+			}
+			ready(function() {
+				var ts = document.getElementById('ts');
+				var tp = (new Date()).getHours();
+
+				if (tp > 16) { ts.innerHTML = 'evening'; document.title="JDa's Portfolio :: Good evening!" }
+				else if (tp < 11) { ts.innerHTML = 'morning'; document.title="JDa's Portfolio :: Good morning!" }
+			});
+		</script>
+	</body>
+</html>
